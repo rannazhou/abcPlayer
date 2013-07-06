@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound
+END
+MeasureTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/6.005/sp12/!svn/ver/20047/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/MeasureTest.java
+END
+KeyChange.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/KeyChange.java
+END
+ChordTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/6.005/sp12/!svn/ver/20047/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/ChordTest.java
+END
+Tuplet.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/Tuplet.java
+END
+RestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/6.005/sp12/!svn/ver/20047/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/RestTest.java
+END
+NoteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/6.005/sp12/!svn/ver/19868/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/NoteTest.java
+END
+KeySigTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/6.005/sp12/!svn/ver/19969/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/KeySigTest.java
+END
+VoiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/6.005/sp12/!svn/ver/20047/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/VoiceTest.java
+END
+ElementVisitorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/6.005/sp12/!svn/ver/20776/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/ElementVisitorTest.java
+END
+SequencePlayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/6.005/sp12/!svn/ver/19737/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/SequencePlayer.java
+END
+KeyChangeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/6.005/sp12/!svn/ver/19868/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/KeyChangeTest.java
+END
+Pitch.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/6.005/sp12/!svn/ver/19937/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/Pitch.java
+END
+Measure.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/Measure.java
+END
+TupletTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/6.005/sp12/!svn/ver/20047/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/TupletTest.java
+END
+Chord.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/Chord.java
+END
+MusicElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/6.005/sp12/!svn/ver/21064/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/MusicElement.java
+END
+SequencePlayerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/6.005/sp12/!svn/ver/20874/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/SequencePlayerTest.java
+END
+Rest.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/Rest.java
+END
+Note.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/Note.java
+END
+Voice.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/6.005/sp12/!svn/ver/21124/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/Voice.java
+END
+ElementVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/6.005/sp12/!svn/ver/21029/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/ElementVisitor.java
+END
+KeySig.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/6.005/sp12/!svn/ver/20975/groups/abcPlayer/rannaz-sedris-rnaphtal/src/sound/KeySig.java
+END

@@ -1,0 +1,167 @@
+package player;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Fraction {
+
+    final private int numerator;
+    final private int denominator;
+    
+    public Fraction(int numerator, int denominator){
+        this.numerator = numerator;
+        this.denominator = denominator;
+        checkRep();
+    }
+    
+    /*
+     * Rep invarant: denominator is not 0
+     */
+    public void checkRep(){
+        assert (denominator != 0);
+    }
+    
+    public static Fraction multiply(Fraction f1, Fraction f2){
+        return new Fraction(f1.numerator*f2.numerator, f1.denominator*f2.denominator);
+    }
+    
+    public int getNumerator() {
+        return numerator;
+    }
+    public int getDenominator() {
+        return denominator;
+    }
+    public int toInt (){
+        return numerator/denominator;
+    }
+    
+    public String toString(){
+        return numerator + "/" + denominator;
+    }
+    
+    
+    /**
+     * 
+     * @param fractions all the fractions, not null
+     * @return the smallest denominator in 
+     * which all the fractions can be expressed with integer numerators
+     */
+    public static int leastCommonDenominator(List<Fraction> fractions){
+        int [] denominators = new int[fractions.size()];
+        for (int i=0;i<fractions.size();i++){
+            denominators[i] = fractions.get(i).denominator;
+        }
+        return lcm(denominators);
+    }
+    
+    private static int gcd(int a, int b)
+    {
+        while (b > 0)
+        {
+            int temp = b;
+            b = a % b; // % is remainder
+            a = temp;
+        }
+        return a;
+    }
+
+    private static int lcm(int a, int b)
+    {
+        return a * (b / gcd(a, b));
+    }
+
+    private static int lcm(int[] input)
+    {
+        int result = input[0];
+        for(int i = 1; i < input.length; i++) result = lcm(result, input[i]);
+        return result;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + denominator;
+        result = prime * result + numerator;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj){
+            return true;
+        }
+        if (obj == null){
+            return false;
+        }
+        if (getClass() != obj.getClass()){
+            return false;
+        }
+        Fraction other = (Fraction) obj;
+        if (denominator != other.denominator){
+            return false;
+        }
+        if (numerator != other.numerator){
+            return false;
+        }
+        return true;
+    }
+
+   /**
+    * 
+    * @param totalDuration
+    * @return -1, 0, or a 1 if this object is 
+    * less than, equal to, or greater than 
+    * the specified object.
+    */
+    public int compareTo(Fraction totalDuration) {
+        ArrayList<Fraction> fractions = new ArrayList<Fraction>();
+        fractions.add(this);
+        fractions.add(totalDuration);
+        
+        int lcd = leastCommonDenominator(fractions);
+        int thisMultiple = lcd / this.denominator;
+        int otherMultiple = lcd / totalDuration.getDenominator();
+        
+        int thisVal = thisMultiple * this.numerator;
+        int otherVal = otherMultiple * totalDuration.getNumerator();
+        
+        if (thisVal == otherVal){
+            return 0;
+        }
+        if (thisVal < otherVal){
+            return -1;
+        }
+        return 1;
+    }
+    
+    
+    /**
+     * 
+     * @param frac Fraction to be added to this one
+     * @return new Fraction with <b>this</b> and <b>frac</b> added together
+     */
+    public Fraction add(Fraction frac){
+        ArrayList<Fraction> fractions = new ArrayList<Fraction>();
+        fractions.add(this);
+        fractions.add(frac);
+        
+        int lcd = leastCommonDenominator(fractions);
+        int thisMultiple = lcd / this.denominator;
+        int otherMultiple = lcd / frac.getDenominator();
+        
+        int thisVal = thisMultiple * this.numerator;
+        int otherVal = otherMultiple * frac.getNumerator();
+        
+        return new Fraction(thisVal + otherVal, lcd).reduce();
+    }
+    
+    /**
+     * 
+     * @return reduced fraction
+     */
+    public Fraction reduce(){
+        int gcd = gcd(numerator, denominator);
+        return new Fraction(numerator/gcd, denominator/gcd);
+    }
+}

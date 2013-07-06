@@ -1,0 +1,34 @@
+10
+
+dir
+21167
+https://svn.csail.mit.edu/6.005/sp12/groups/abcPlayer/rannaz-sedris-rnaphtal/src
+https://svn.csail.mit.edu/6.005/sp12
+
+
+
+2012-04-03T23:25:54.768027Z
+21167
+sedris
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+162adf31-b729-4fd7-95b4-4f8ef622213b
+
+player
+dir
+
+sound
+dir
+
